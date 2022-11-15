@@ -43,7 +43,8 @@ strip.showColor(neopixel.colors(NeoPixelColors.Blue))
 ## Steg 5 - Flott! 
 
 Hvis det ble lys: Hurra! Prøv å forandre fargen på lysene.
-Hvis det ikke ble lys: Bla tilbake til sted 3 og sjekk om du har koblet riktig.
+
+Hvis det ikke ble lys: Bla tilbake til steg 3 og sjekk om du har koblet riktig.
 
 
 ## Steg 6 - Analyse av koden @showdialog
@@ -63,7 +64,7 @@ Når du føler deg fornøyd, kan du trykke på "Avslutt / Finish" for å gå til
 Hvis du har lyst å utforske hvordan du kan få lyset til å bevege seg, kan du kikke på "Bli bedre kjent med NeoPixler"-veiledningen.
 
 
-```blocks
+```ghost
 let strip = neopixel.create(DigitalPin.P2, 5, NeoPixelMode.RGB)
 strip.clear()
 strip.showColor(neopixel.colors(NeoPixelColors.Red))
