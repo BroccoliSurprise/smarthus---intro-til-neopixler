@@ -5,6 +5,19 @@ let strip = neopixel.create(DigitalPin.P2, 5, NeoPixelMode.RGB)
 strip.showColor(neopixel.colors(NeoPixelColors.Blue))
 ```
 
+```ghost
+let strip = neopixel.create(DigitalPin.P2, 5, NeoPixelMode.RGB)
+strip.clear()
+strip.showColor(neopixel.colors(NeoPixelColors.Red))
+strip.setPixelColor(2, neopixel.rgb(70, 40, 120))
+basic.pause(500)
+strip.show()
+
+basic.forever(function () {
+})
+
+```
+
 
 
 ## Steg 1 - Hva er NeoPixler ? @showdialog
@@ -29,6 +42,8 @@ Utstyret kan bli ødelagt om ledningene sklir eller kortslutter, så vær ** hel
 ![bilde av ledninger koblet på microbit](https://d14xnrffmhx4ml.cloudfront.net/1660675040/smarthus-veiledning-neopixel-ledninger.jpg)
 
 Fra høyre til venstre skal det være svart på ** GND **, rød på ** 3V **, og så hvit / gul på ** 2 **.
+
+Sett krokodilleklypene i hullene slik at de ikke sklir.
 
 
 ## Steg 4 - Last ned koden
@@ -63,8 +78,7 @@ Når du føler deg fornøyd, kan du trykke på "Avslutt / Finish" for å gå til
 
 Hvis du har lyst å utforske hvordan du kan få lyset til å bevege seg, kan du kikke på "Bli bedre kjent med NeoPixler"-veiledningen.
 
-
-```ghost
+```blocks
 let strip = neopixel.create(DigitalPin.P2, 5, NeoPixelMode.RGB)
 strip.clear()
 strip.showColor(neopixel.colors(NeoPixelColors.Red))
@@ -76,3 +90,4 @@ basic.forever(function () {
 })
 
 ```
+
